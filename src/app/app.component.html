@@ -1,0 +1,12 @@
+<p>Set Interval</p>
+
+<p>
+  <button
+    (click)="goToResetPassword()"
+    [disabled]="!resendEmailEnabled"
+    class="red-text resend-link"
+  >
+    resend
+  </button>
+  <span *ngIf="!resendEmailEnabled">{{ counter }}</span>
+</p>
